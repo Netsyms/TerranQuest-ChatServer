@@ -1,0 +1,14 @@
+{
+    "name": "netsyms-technologies/terran-quest-chat-server",
+    "description": "Description of project TerranQuest Chat Server.",
+    "authors": [
+        {
+            "name": "Skylar Ittner",
+            "email": "admin@netsyms.com"
+        }
+    ],
+    "require": {
+        "catfan/medoo": "* v1.0.2",
+        "anthonymartin/geo-location": "* v1.0.0"
+    }
+}

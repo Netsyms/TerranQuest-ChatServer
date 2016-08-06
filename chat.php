@@ -61,8 +61,10 @@ if (GET) {
     if (is_empty($VARS['user']) || is_empty($VARS['lat']) || is_empty($VARS['long']) || is_empty($VARS['msg'])) {
         sendError("Missing information.", true);
     }
+    
+    $msg = strip_tags($VARS['msg']);
 
-    $database->insert('messages', ['#time' => 'NOW()', 'username' => $VARS['user'], 'message' => $VARS['msg'], 'lat' => $VARS['lat'], 'long' => $VARS['long']]);
+    $database->insert('messages', ['#time' => 'NOW()', 'username' => $VARS['user'], 'message' => $msg, 'lat' => $VARS['lat'], 'long' => $VARS['long']]);
 
     sendOK();
 }

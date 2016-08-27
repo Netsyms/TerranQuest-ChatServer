@@ -1,3 +1,5 @@
-error*
-stats*
-vendor*
+error/
+stats/
+vendor/
+nbproject/
+.htaccess

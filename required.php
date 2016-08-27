@@ -27,10 +27,10 @@ $database;
 try {
     $database = new medoo([
         'database_type' => 'mysql',
-        'database_name' => 'c0terranquestchat',
+        'database_name' => 'cs-terranquest',
         'server' => 'localhost',
-        'username' => 'c0terranquest',
-        'password' => 'qinkifTQ!OMY2',
+        'username' => 'terranquest',
+        'password' => '',
         'charset' => 'utf8'
     ]);
 } catch (Exception $ex) {
